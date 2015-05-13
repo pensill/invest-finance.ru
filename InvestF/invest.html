@@ -1,0 +1,621 @@
+<!doctype html>
+<html xml:lang="ru" lang="ru">
+	<head>
+		<title>Invest Finance</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="" />
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/jquery-ui.min.css" />
+		<link rel="stylesheet" href="css/fonts.css" />
+		<link rel="stylesheet" href="style.css" />
+		<!--[if IE]>
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+			<script src="js/respond.src.js"></script>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
+		<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+		<script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+		<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<div class="container">
+					<div class="row top-header">
+						<div class="col-sm-2 logo-wrapper">
+							<a href="#"><img src="img/logo.png" alt=""/></a>
+						</div>
+						<div class="col-sm-10 main-header">
+							<div class="row top-links">
+								<div class="col-sm-6 top-left-links">
+									<div class="city">
+										<a href="#">Санкт-Петербург</a>
+									</div>
+									<div class="favor">
+										<a href="#">
+											<span class="text">Избранное</span>
+											<span class="amount">22</span>
+										</a>
+									</div>
+									<div class="compare">
+										<a href="#">
+											<span class="text">Сравнить</span>
+											<span class="amount">13</span>
+										</a>
+									</div>
+								</div>
+								<div class="col-sm-4 top-right-links col-sm-offset-2">
+									<div class="enter">
+										<a href="#"><span>Войти</span></a>
+									</div>
+									<div class="register">
+										<a href="#"><span>Зарегистрироваться</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="row main-menu">
+								<nav class="col-sm-12">
+									<ul>
+										<li><a href="#">Арендный бизнес</a></li>
+										<li><a href="#">Вклады</a></li>
+										<li><a href="#">Пифы</a></li>
+										<li><a href="#">Кредиты</a></li>
+										<li><a href="#">Инвесторы</a></li>
+										<li><a href="#">Компании</a></li>
+										<li><a href="#">Пресс-релизы</a></li>
+										<li><a href="#">Новости</a></li>
+										<li><a href="#">Статьи</a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+					<div class="row info-header">
+						<div class="col-sm-2 logo-wrapper currency-wrapper">
+							<div class="heading">Курсы валюты <span class="date">23.06.15</span></div>
+							<div class="currency-values">
+								<div class="currency">
+									<span class="name">&#8364;</span>
+									<span class="value">67.49489</span>
+									<span class="arrow arrow-down"></span>
+								</div>
+								<div class="currency">
+									<span class="name">$</span>
+									<span class="value">67.49489</span>
+									<span class="arrow arrow-up"></span>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-10 main-header">
+							<div class="row">
+								<div class="col-sm-9 benefit-search">
+									<div class="benefit-search-inner">
+										<h2>Найти лучшую доходность для суммы</h2>
+										<div id="benefit-search-form">
+											<form>
+												<div class="input-wrapper">
+													<input type="text" name="form_text_1"/>
+													<select class="rub">
+														<option>$</option>
+														<option>&#8364;</option>
+														<option>p</option>
+													</select>
+												</div>
+												<input type="submit" value="Искать"/>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3 quotation">
+									<blockquote>
+										<p>Измени мышление, и ты изменишь свою жизнь</p>
+										<footer><cite>Брайан Трейси, бизнес-тренер</cite></footer>
+									</blockquote>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<section>	
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-9 main-page-info">
+							<div class="breadcrumbs">
+								<ul>
+									<li><a href="#">Главная</a></li>
+									<li><span>Вклады</span></li>
+								</ul>
+							</div>
+							<h2>Вклады</h2>
+							<div class="show-tabs invest-show-tabs">
+								<div class="show-amount">
+									<span>Сортировать по</span>
+									<select>
+										<option>Банку</option>
+										<option>Ставке</option>
+										<option>КэшФло</option>
+									</select>
+								</div>
+								<div class="show-amount">
+									<span>Выводить по</span>
+									<a href="#">20</a>
+								</div>
+								<ul>
+									<li><a href="#rows" class="show-rows"></a></li>
+									<li><a href="#blocks" class="show-blocks"></a></li>
+								</ul>
+								<div id="rows">
+									<div class="row">
+										<div class="col-md-12">
+											<table class="invests-table">
+												<thead>
+													<tr>
+														<td>Банки</td>
+														<td>Название вклада</td>
+														<td>Валюта вклада</td>
+														<td>Срок размещения</td>
+														<td>Минимальный взнос</td>
+														<td>Ставка в год</td>
+														<td>КэшФло</td>
+														<td>Город / дата</td>
+														<td>Закладки/ Сравнить</td>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>
+															<img src="img/bank-yellow.png" alt=""/>
+														</td>
+														<td>
+															<h3><a href="#">Вклад "Семейный"</a></h3>
+															<div class="comment">Пополнение, частичное снятие</div>
+														</td>
+														<td>
+															<span class="currency">rub</span>
+														</td>
+														<td>от 1 года</td>
+														<td>от 100 000</td>
+														<td><b>12,5 %</b></td>
+														<td>30 000 руб.</td>
+														<td>
+															<div class="city">Сан.Петербург</div>
+															<div class="date">25.02.2015</div>
+														</td>
+														<td>
+															<a href="#" class="icon icon-favor active"></a>
+															<a href="#" class="icon icon-compare active"></a>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<img src="img/bank-yellow.png" alt=""/>
+														</td>
+														<td>
+															<h3><a href="#">Вклад "Семейный"</a></h3>
+															<div class="comment">Пополнение, частичное снятие</div>
+														</td>
+														<td>
+															<span class="currency">rub</span>
+														</td>
+														<td>от 1 года</td>
+														<td>от 100 000</td>
+														<td><b>12,5 %</b></td>
+														<td>30 000 руб.</td>
+														<td>
+															<div class="city">Сан.Петербург</div>
+															<div class="date">25.02.2015</div>
+														</td>
+														<td>
+															<a href="#" class="icon icon-favor active"></a>
+															<a href="#" class="icon icon-compare active"></a>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<img src="img/bank-yellow.png" alt=""/>
+														</td>
+														<td>
+															<h3><a href="#">Вклад "Семейный"</a></h3>
+															<div class="comment">Пополнение, частичное снятие</div>
+														</td>
+														<td>
+															<span class="currency">rub</span>
+														</td>
+														<td>от 1 года</td>
+														<td>от 100 000</td>
+														<td><b>12,5 %</b></td>
+														<td>30 000 руб.</td>
+														<td>
+															<div class="city">Сан.Петербург</div>
+															<div class="date">25.02.2015</div>
+														</td>
+														<td>
+															<a href="#" class="icon icon-favor active"></a>
+															<a href="#" class="icon icon-compare active"></a>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<img src="img/bank-yellow.png" alt=""/>
+														</td>
+														<td>
+															<h3><a href="#">Вклад "Семейный"</a></h3>
+															<div class="comment">Пополнение, частичное снятие</div>
+														</td>
+														<td>
+															<span class="currency">rub</span>
+														</td>
+														<td>от 1 года</td>
+														<td>от 100 000</td>
+														<td><b>12,5 %</b></td>
+														<td>30 000 руб.</td>
+														<td>
+															<div class="city">Сан.Петербург</div>
+															<div class="date">25.02.2015</div>
+														</td>
+														<td>
+															<a href="#" class="icon icon-favor active"></a>
+															<a href="#" class="icon icon-compare active"></a>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<img src="img/bank-yellow.png" alt=""/>
+														</td>
+														<td>
+															<h3><a href="#">Вклад "Семейный"</a></h3>
+															<div class="comment">Пополнение, частичное снятие</div>
+														</td>
+														<td>
+															<span class="currency">rub</span>
+														</td>
+														<td>от 1 года</td>
+														<td>от 100 000</td>
+														<td><b>12,5 %</b></td>
+														<td>30 000 руб.</td>
+														<td>
+															<div class="city">Сан.Петербург</div>
+															<div class="date">25.02.2015</div>
+														</td>
+														<td>
+															<a href="#" class="icon icon-favor active"></a>
+															<a href="#" class="icon icon-compare active"></a>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<img src="img/bank.png" alt=""/>
+														</td>
+														<td>
+															<h3><a href="#">Вклад "Семейный"</a></h3>
+															<div class="comment">Пополнение, частичное снятие</div>
+														</td>
+														<td>
+															<span class="currency">rub</span>
+														</td>
+														<td>от 1 года</td>
+														<td>от 100 000</td>
+														<td><b>12,5 %</b></td>
+														<td>30 000 руб.</td>
+														<td>
+															<div class="city">Сан.Петербург</div>
+															<div class="date">25.02.2015</div>
+														</td>
+														<td>
+															<a href="#" class="icon icon-favor active"></a>
+															<a href="#" class="icon icon-compare active"></a>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<img src="img/bank.png" alt=""/>
+														</td>
+														<td>
+															<h3><a href="#">Вклад "Семейный"</a></h3>
+															<div class="comment">Пополнение, частичное снятие</div>
+														</td>
+														<td>
+															<span class="currency">rub</span>
+														</td>
+														<td>от 1 года</td>
+														<td>от 100 000</td>
+														<td><b>12,5 %</b></td>
+														<td>30 000 руб.</td>
+														<td>
+															<div class="city">Сан.Петербург</div>
+															<div class="date">25.02.2015</div>
+														</td>
+														<td>
+															<a href="#" class="icon icon-favor active"></a>
+															<a href="#" class="icon icon-compare active"></a>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<img src="img/bank.png" alt=""/>
+														</td>
+														<td>
+															<h3><a href="#">Вклад "Семейный"</a></h3>
+															<div class="comment">Пополнение, частичное снятие</div>
+														</td>
+														<td>
+															<span class="currency">rub</span>
+														</td>
+														<td>от 1 года</td>
+														<td>от 100 000</td>
+														<td><b>12,5 %</b></td>
+														<td>30 000 руб.</td>
+														<td>
+															<div class="city">Сан.Петербург</div>
+															<div class="date">25.02.2015</div>
+														</td>
+														<td>
+															<a href="#" class="icon icon-favor active"></a>
+															<a href="#" class="icon icon-compare active"></a>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<img src="img/bank.png" alt=""/>
+														</td>
+														<td>
+															<h3><a href="#">Вклад "Семейный"</a></h3>
+															<div class="comment">Пополнение, частичное снятие</div>
+														</td>
+														<td>
+															<span class="currency">rub</span>
+														</td>
+														<td>от 1 года</td>
+														<td>от 100 000</td>
+														<td><b>12,5 %</b></td>
+														<td>30 000 руб.</td>
+														<td>
+															<div class="city">Сан.Петербург</div>
+															<div class="date">25.02.2015</div>
+														</td>
+														<td>
+															<a href="#" class="icon icon-favor active"></a>
+															<a href="#" class="icon icon-compare active"></a>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<img src="img/bank.png" alt=""/>
+														</td>
+														<td>
+															<h3><a href="#">Вклад "Семейный"</a></h3>
+															<div class="comment">Пополнение, частичное снятие</div>
+														</td>
+														<td>
+															<span class="currency">rub</span>
+														</td>
+														<td>от 1 года</td>
+														<td>от 100 000</td>
+														<td><b>12,5 %</b></td>
+														<td>30 000 руб.</td>
+														<td>
+															<div class="city">Сан.Петербург</div>
+															<div class="date">25.02.2015</div>
+														</td>
+														<td>
+															<a href="#" class="icon icon-favor active"></a>
+															<a href="#" class="icon icon-compare active"></a>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<img src="img/bank.png" alt=""/>
+														</td>
+														<td>
+															<h3><a href="#">Вклад "Семейный"</a></h3>
+															<div class="comment">Пополнение, частичное снятие</div>
+														</td>
+														<td>
+															<span class="currency">rub</span>
+														</td>
+														<td>от 1 года</td>
+														<td>от 100 000</td>
+														<td><b>12,5 %</b></td>
+														<td>30 000 руб.</td>
+														<td>
+															<div class="city">Сан.Петербург</div>
+															<div class="date">25.02.2015</div>
+														</td>
+														<td>
+															<a href="#" class="icon icon-favor active"></a>
+															<a href="#" class="icon icon-compare active"></a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+											<div class="pagination">
+												<a href="#" class="news-back"><span>Назад</span></a>
+												<ul>
+													<li><a href="#">1</a></li>
+													<li><a href="#">2</a></li>
+													<li class="active"><a href="#">3</a></li>
+													<li><a href="#">4</a></li>
+													<li><a href="#">5</a></li>
+												</ul>
+												<a href="#" class="news-next"><span>Вперед</span></a>
+											</div>
+										</div>										
+									</div>
+								</div>
+								<div id="blocks">
+									<div class="row">
+										<div class="col-md-12">
+										</div>										
+									</div>
+								</div>
+							</div>				 			
+							<div class="text-block invest-text-block">
+								<h1>Банковские вклады как&nbsp;модель инвестиций</h1>
+								<div class="text">
+									<p>Invest-Finance — Кризис жанра продолжает рок-н-ролл 50-х. Звукоряд, и это особенно 
+	заметно у Чарли Паркера или Джона Колтрейна, выстраивает гипнотический рифф. <br/>Протяженность диссонирует композиционный мнимотакт, потому что современная музыка не запоминается. Пуантилизм, зародившийся в музыкальных микроформах начала ХХ столетия, нашел далекую историческую параллель в лице средневекового гокета, однако легато просветляет целотоновый рок-н-ролл 50-х.</p>
+									<p>Аллюзийно-полистилистическая композиция заканчивает мелодический сет. Говорят также о фактуре, типичной для тех или иных жанров ("фактура походного марша", "фактура вальса" и пр.), и здесь мы видим, что ретро вызывает полиряд, и если в одних голосах или пластах музыкальной ткани сочинения еще продолжаются конструктивно-композиционные процессы предыдущей части, то в других - происходит становление новых. Детройтское техно использует однокомпонентный канал. Полимодальная организация, в первом приближении, имитирует однокомпонентный контрапункт контрастных фактур. </p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3 aside">
+							<div class="filter">
+								<form>
+									<div class="filter-block">
+										<h4>Город:</h4>
+										<select>
+											<option>Санкт-Петербург</option>
+											<option>Москва</option>
+										</select>
+									</div>
+									<div class="filter-block">
+										<h4>Валюта:</h4>
+										<select>
+											<option>Рубли</option>
+											<option>Евро</option>
+											<option>Доллары</option>
+										</select>
+									</div>
+									<div class="filter-block">
+										<h4>Срок размещения, мес.</h4>
+										<div class="filter-slider" id="time-slider">
+											<div class="ui-slide"></div>
+											<div class="values">
+												<span class="min-values"><span class="min-amount">6</span></span>
+												<span class="max-values"><span class="max-amount">36</span></span>
+											</div>
+										</div>
+									</div>
+									<div class="filter-block">
+										<h4>Процентная ставка</h4>
+										<div class="filter-slider" id="procent-slider">
+											<div class="ui-slide"></div>
+											<div class="values">
+												<span class="min-values"><span class="min-amount">6</span>%</span>
+												<span class="max-values"><span class="max-amount">36</span>%</span>
+											</div>
+										</div>
+									</div>
+									<div class="filter-block">
+										<h4>Выплата %:</h4>
+										<select>
+											<option>0</option>
+											<option>1</option>
+											<option>2</option>
+										</select>
+									</div>
+									<div class="filter-block">
+										<h4>Поиск по КэшФло:</h4>
+										<div class="filter-slider" id="search-slider">
+											<div class="ui-slide"></div>
+											<div class="values">
+												<span class="min-values"><span class="min-amount">6</span></span>
+												<span class="max-values"><span class="max-amount">36</span></span>
+											</div>
+										</div>
+									</div>
+									<div class="filter-block checkbox-block">
+										<h4>Банк</h4>
+										<div class="filter-checkbox">
+											<div class="values-overflow">
+												<div class="values">
+													<label>
+														<input type="checkbox" name="bank"/>
+														<span>Сбербанк России</span>
+													</label>
+													<label>
+														<input type="checkbox" name="bank"/>
+														<span>ВТБ</span>
+													</label>
+													<label>
+														<input type="checkbox" name="bank"/>
+														<span>Банк «Санкт-Петербург»</span>
+													</label>
+													<label>
+														<input type="checkbox" name="bank"/>
+														<span>Балтинвестбанк</span>
+													</label>
+													<label>
+														<input type="checkbox" name="bank"/>
+														<span>Альфа-Банк</span>
+													</label>
+													<label>
+														<input type="checkbox" name="bank"/>
+														<span>Россельхозбанк</span>
+													</label>
+													<label>
+														<input type="checkbox" name="bank"/>
+														<span>Объединенный Капитал</span>
+													</label>
+													<label>
+														<input type="checkbox" name="bank"/>
+														<span>Александровский</span>
+													</label>
+													<label>
+														<input type="checkbox" name="bank"/>
+														<span>Зенит</span>
+													</label>
+													<label>
+														<input type="checkbox" name="bank"/>
+														<span>Югра</span>
+													</label>
+												</div>
+											</div>
+											<a href="#" class="show-all dark-btn">Смотреть все</a>
+										</div>
+									</div>
+									<input type="submit" value="показать"/>
+									<a href="#" class="filter-clean">
+										<i class="icon icon-basket"></i>
+										<span>Очистить фильтр</span>
+									</a>
+								</form>
+							</div>
+							<div class="banner">
+								<a href="#"><img src="img/banner.jpg" alt=""/></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer>	
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 footer-menu">
+							<ul>
+								<li><a href="#">О проекте</a></li>
+								<li><a href="#">Рекламные возможности</a></li>
+								<li><a href="#">Девелоперам</a></li>
+								<li><a href="#">Финансистам</a></li>
+								<li><a href="#">Инвесторам</a></li>
+								<li><a href="#">Контакты</a></li>
+								<li><a href="#">Карта сайта</a></li>
+								<li><a href="#">Партнерская программа</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-3 copyrights">
+							© 2014 Invest-finance.ru
+						</div>
+						<div class="col-sm-6 copyrights-text">
+							При использовании текстовых материалов ссылки и гиперссылки должны быть 
+							сделаны пользователем в первом абзаце текста, котором используется
+							текстовые материалы с сайта
+						</div>
+					</div>
+				</div>	
+			</footer>
+		</div>
+		<div id="scrollup"><img alt="" src="img/icons/scroll.png"></div>
+	</body>
+</html>

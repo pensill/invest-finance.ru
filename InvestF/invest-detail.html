@@ -1,0 +1,676 @@
+<!doctype html>
+<html xml:lang="ru" lang="ru">
+	<head>
+		<title>Invest Finance</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="" />
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/jquery-ui.min.css" />
+		<link rel="stylesheet" href="css/jquery.fancybox.css" />
+		<link rel="stylesheet" href="css/fonts.css" />
+		<link rel="stylesheet" href="style.css" />
+		<!--[if IE]>
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+			<script src="js/respond.src.js"></script>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+		<script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
+		<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+		<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<div class="container">
+					<div class="row top-header">
+						<div class="col-sm-2 logo-wrapper">
+							<a href="#"><img src="img/logo.png" alt=""/></a>
+						</div>
+						<div class="col-sm-10 main-header">
+							<div class="row top-links">
+								<div class="col-sm-6 top-left-links">
+									<div class="city">
+										<a href="#">Санкт-Петербург</a>
+									</div>
+									<div class="favor">
+										<a href="#">
+											<span class="text">Избранное</span>
+											<span class="amount">22</span>
+										</a>
+									</div>
+									<div class="compare">
+										<a href="#">
+											<span class="text">Сравнить</span>
+											<span class="amount">13</span>
+										</a>
+									</div>
+								</div>
+								<div class="col-sm-4 top-right-links col-sm-offset-2">
+									<div class="enter">
+										<a href="#"><span>Войти</span></a>
+									</div>
+									<div class="register">
+										<a href="#"><span>Зарегистрироваться</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="row main-menu">
+								<nav class="col-sm-12">
+									<ul>
+										<li><a href="#">Арендный бизнес</a></li>
+										<li><a href="#">Вклады</a></li>
+										<li><a href="#">Пифы</a></li>
+										<li><a href="#">Кредиты</a></li>
+										<li><a href="#">Инвесторы</a></li>
+										<li><a href="#">Компании</a></li>
+										<li><a href="#">Пресс-релизы</a></li>
+										<li><a href="#">Новости</a></li>
+										<li><a href="#">Статьи</a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+					<div class="row info-header">
+						<div class="col-sm-2 logo-wrapper currency-wrapper">
+							<div class="heading">Курсы валюты <span class="date">23.06.15</span></div>
+							<div class="currency-values">
+								<div class="currency">
+									<span class="name">&#8364;</span>
+									<span class="value">67.49489</span>
+									<span class="arrow arrow-down"></span>
+								</div>
+								<div class="currency">
+									<span class="name">$</span>
+									<span class="value">67.49489</span>
+									<span class="arrow arrow-up"></span>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-10 main-header">
+							<div class="row">
+								<div class="col-sm-9 benefit-search">
+									<div class="benefit-search-inner">
+										<h2>Найти лучшую доходность для суммы</h2>
+										<div id="benefit-search-form">
+											<form>
+												<div class="input-wrapper">
+													<input type="text" name="form_text_1"/>
+													<select class="rub">
+														<option>$</option>
+														<option>&#8364;</option>
+														<option>p</option>
+													</select>
+												</div>
+												<input type="submit" value="Искать"/>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3 quotation">
+									<blockquote>
+										<p>Измени мышление, и ты изменишь свою жизнь</p>
+										<footer><cite>Брайан Трейси, бизнес-тренер</cite></footer>
+									</blockquote>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<section>	
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-9 main-page-info">
+							<div class="breadcrumbs">
+								<ul>
+									<li><a href="#">Главная</a></li>
+									<li><a href="#">Вклады</a></li>
+									<li><span>Вклад "Оптимальный"</span></li>
+								</ul>
+							</div>
+							<div class="house-detail invest-detail">
+								<div class="row">
+									<div class="col-sm-3 photogallery">
+										<div class="detail-image">
+											<img src="img/images/invest-detail.jpg" alt=""/>
+										</div>
+										<div class="socials">
+											<a href="#"><img src="img/icons/social-1.png" alt=""></a>
+											<a href="#"><img src="img/icons/social-2.png" alt=""></a>
+											<a href="#"><img src="img/icons/social-3.png" alt=""></a>
+											<a href="#"><img src="img/icons/social-4.png" alt=""></a>
+											<a href="#"><img src="img/icons/social-5.png" alt=""></a>
+											<a href="#"><img src="img/icons/social-6.png" alt=""></a>
+										</div>
+									</div>
+									<div class="col-sm-9 house-main-info">
+										<div class="row">
+											<div class="col-sm-8 house-description">
+												<div class="favor-compare">
+													<a href="#" class="icon icon-favor"></a>
+													<a href="#" class="icon icon-compare"></a>
+												</div>
+												<h1>Вклад "Оптимальный"</h1>
+												<div class="bank">Банк "Транспортный", Санкт-Петербург</div>
+												<div class="detail-text">
+													<p>Открытие вклада в нашем банке — выгодное решение для физических лиц, заинтересованных в сохранности своих средств. Ваши вложения не только будут расти благодаря прибыльным ставкам. </p>
+													<p>гарантированно окажутся защищенными от любых финансовых проблем. Банковские вклады Инвестторгбанка страхуются в обязательном порядке.</p>
+												</div>
+											</div>
+											<div class="col-sm-4 house-parameters">
+												<div class="invest-parameters">
+													<div class="inline">
+														<div class="name">Ставка в год</div>
+														<div class="value">14<span class="measure">%</span></div>
+													</div>
+													<div class="inline">
+														<div class="name">Валюта</div>
+														<div class="value">rub</div>
+													</div>
+												</div>
+												<div class="links">
+													<a class="link link-pdf"><span>Экспорт в pdf</span></a>
+													<a class="link link-print"><span>Распечатать</span></a>
+													<a class="link link-complain"><span>Пожаловаться</span></a>
+													<a class="link link-mail"><span>Отправить на email</span></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-12">
+										<table class="page-table">
+											<tbody>
+												<tr>
+													<td>Срок размещения</td>
+													<td>от 1 года</td>
+												</tr>
+												<tr>
+													<td>Выплата процентов</td>
+													<td>на коне срока</td>
+												</tr>
+												<tr>
+													<td>Минимальный взнос</td>
+													<td>250 000 рублей</td>
+												</tr>
+												<tr>
+													<td>Пополнение вклада</td>
+													<td>возможно</td>
+												</tr>
+												<tr>
+													<td>Частичное снятие</td>
+													<td>возможно минимальный неснижаемый остаток равен минимальной сумме вклада</td>
+												</tr>
+												<tr>
+													<td>Автопродление вклада</td>
+													<td>невозможно</td>
+												</tr>
+												<tr>
+													<td>Комиссия банка</td>
+													<td>от 3%</td>
+												</tr>
+											</tbody>
+										</table>
+										<h2>Финансовые показатели</h2>
+										<table class="page-table">
+											<tbody>
+												<tr>
+													<td>CashFlow в месяц, рубли</td>
+													<td>20 000 рублей</td>
+												</tr>
+												<tr>
+													<td>Срок окупаемости, мес.</td>
+													<td>36</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="row contacts-row">
+									<h2 class="col-sm-12">Контакты</h2>
+									<div class="col-sm-6 contacts-info">
+										<div class="contacts-main">
+											<div class="line">
+												<div class="name">Адрес:</div>
+												<div class="value">129090, Санкт-Петербург, ул.&nbsp;Каланчевская, д. 49,</div>
+											</div>
+											<div class="line">
+												<div class="name">Телефоны:</div>
+												<div class="value">(812) 938-77-83; (812) 938-77-84</div>
+											</div>
+											<a href="#" class="dark-btn">Отправить письмо</a>
+										</div>
+									</div>
+									<div class="col-sm-6 contacts-map">
+										<div class="contacts-map-wrapper">
+											<div class="map-link">
+												<a href="#">Подробнее</a>
+											</div>
+											<div class="map-image">
+												<div id="house-map"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="prev-next-navigation">
+									<a href="#" class="prev-navigation"><span>Предыдущий вклад</span></a>
+									<a href="#" class="next-navigation"><span>Следующий вклад</span></a>
+								</div>
+								<div class="row same-objects">
+									<h2 class="col-sm-12">Вклады этого банка</h2>
+									<div class="col-sm-12 objects-wrapper">
+										<div class="invests-list">
+											<ul>
+												<li>
+													<div class="invest-top">
+														<div class="image">
+															<a href="#"><img src="img/bank.png" alt=""></a>
+														</div>
+														<div class="content">
+															<div class="date">23.05.15</div>
+															<h3><a href="#">Оптимальный семейный вклад</a></h3>
+														</div>	
+													</div>	
+													<div class="parameters-list">
+														<div class="line">
+															<div class="name">Валюта</div>
+															<div class="value"><span class="currency-value">rub</span></div>
+														</div>
+														<div class="line">
+															<div class="name">Ставка %</div>
+															<div class="value"><span class="procent-value"> 13%</span></div>
+														</div>
+														<div class="line">
+															<div class="name">Город</div>
+															<div class="value">Москва</div>
+														</div>
+														<div class="line">
+															<div class="name">Срок размещения</div>
+															<div class="value">2 года</div>
+														</div>
+														<div class="line">
+															<div class="name">Минимальный взнос, р.</div>
+															<div class="value">600 000</div>
+														</div>
+													</div>
+													<div class="btn-wrapper">
+														<a href="#" class="favor-btn"><i class="icon"></i>В закладки</a>
+														<a href="#" class="compare-btn"><i class="icon"></i>Сравнить</a>
+													</div>
+												</li>
+												<li>
+													<div class="invest-top">
+														<div class="image">
+															<a href="#"><img src="img/bank.png" alt=""></a>
+														</div>
+														<div class="content">
+															<div class="date">23.05.15</div>
+															<h3><a href="#">Оптимальный семейный вклад</a></h3>
+														</div>	
+													</div>	
+													<div class="parameters-list">
+														<div class="line">
+															<div class="name">Валюта</div>
+															<div class="value"><span class="currency-value">rub</span></div>
+														</div>
+														<div class="line">
+															<div class="name">Ставка %</div>
+															<div class="value"><span class="procent-value"> 13%</span></div>
+														</div>
+														<div class="line">
+															<div class="name">Город</div>
+															<div class="value">Москва</div>
+														</div>
+														<div class="line">
+															<div class="name">Срок размещения</div>
+															<div class="value">2 года</div>
+														</div>
+														<div class="line">
+															<div class="name">Минимальный взнос, р.</div>
+															<div class="value">600 000</div>
+														</div>
+													</div>
+													<div class="btn-wrapper">
+														<a href="#" class="favor-btn"><i class="icon"></i>В закладки</a>
+														<a href="#" class="compare-btn"><i class="icon"></i>Сравнить</a>
+													</div>
+												</li>
+												<li>
+													<div class="invest-top">
+														<div class="image">
+															<a href="#"><img src="img/bank.png" alt=""></a>
+														</div>
+														<div class="content">
+															<div class="date">23.05.15</div>
+															<h3><a href="#">Оптимальный семейный вклад</a></h3>
+														</div>	
+													</div>	
+													<div class="parameters-list">
+														<div class="line">
+															<div class="name">Валюта</div>
+															<div class="value"><span class="currency-value">rub</span></div>
+														</div>
+														<div class="line">
+															<div class="name">Ставка %</div>
+															<div class="value"><span class="procent-value"> 13%</span></div>
+														</div>
+														<div class="line">
+															<div class="name">Город</div>
+															<div class="value">Москва</div>
+														</div>
+														<div class="line">
+															<div class="name">Срок размещения</div>
+															<div class="value">2 года</div>
+														</div>
+														<div class="line">
+															<div class="name">Минимальный взнос, р.</div>
+															<div class="value">600 000</div>
+														</div>
+													</div>
+													<div class="btn-wrapper">
+														<a href="#" class="favor-btn"><i class="icon"></i>В закладки</a>
+														<a href="#" class="compare-btn"><i class="icon"></i>Сравнить</a>
+													</div>
+												</li>
+												<li>
+													<div class="invest-top">
+														<div class="image">
+															<a href="#"><img src="img/bank.png" alt=""></a>
+														</div>
+														<div class="content">
+															<div class="date">23.05.15</div>
+															<h3><a href="#">Оптимальный семейный вклад</a></h3>
+														</div>	
+													</div>	
+													<div class="parameters-list">
+														<div class="line">
+															<div class="name">Валюта</div>
+															<div class="value"><span class="currency-value">rub</span></div>
+														</div>
+														<div class="line">
+															<div class="name">Ставка %</div>
+															<div class="value"><span class="procent-value"> 13%</span></div>
+														</div>
+														<div class="line">
+															<div class="name">Город</div>
+															<div class="value">Москва</div>
+														</div>
+														<div class="line">
+															<div class="name">Срок размещения</div>
+															<div class="value">2 года</div>
+														</div>
+														<div class="line">
+															<div class="name">Минимальный взнос, р.</div>
+															<div class="value">600 000</div>
+														</div>
+													</div>
+													<div class="btn-wrapper">
+														<a href="#" class="favor-btn"><i class="icon"></i>В закладки</a>
+														<a href="#" class="compare-btn"><i class="icon"></i>Сравнить</a>
+													</div>
+												</li>
+											</ul>
+											<a class="dark-btn go-to-all" href="#">смотреть все</a>
+										</div>
+									</div>
+								</div>
+								<div class="row tabled-parameters">
+									<h2 class="col-sm-12">Арендный бизнес</h2>
+									<div class="col-sm-12 house-table-wrapper">
+										<div class="table">
+											<div class="tr">
+												<a href="#">
+													<div class="td">
+														<h3>Торговые помещения</h3>
+														<div class="metro"><i class="metro-icon"></i>Проспект Вернандского</div>
+													</div>
+													<div class="td">
+														<div class="name">Общая площадь</div>
+														<div class="value">124,5 км.м.</div>
+													</div>
+													<div class="td">
+														<div class="name">Стоимость</div>
+														<div class="value">24 000 500 Р.</div>
+													</div>
+													<div class="td">
+														<div class="name">Доходность</div>
+														<div class="value">11.5%</div>
+													</div>
+												</a>
+											</div>
+											<div class="tr">
+												<a href="#">
+													<div class="td">
+														<h3>Торговые помещения</h3>
+														<div class="metro"><i class="metro-icon"></i>Проспект Вернандского</div>
+													</div>
+													<div class="td">
+														<div class="name">Общая площадь</div>
+														<div class="value">124,5 км.м.</div>
+													</div>
+													<div class="td">
+														<div class="name">Стоимость</div>
+														<div class="value">24 000 500 Р.</div>
+													</div>
+													<div class="td">
+														<div class="name">Доходность</div>
+														<div class="value">11.5%</div>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row tabled-parameters">
+									<h2 class="col-sm-12">ПИФы</h2>
+									<div class="col-sm-12 house-table-wrapper">
+										<div class="table">
+											<div class="tr">
+												<a href="#">
+													<div class="td">
+														<h3>Фонд Надежный</h3>
+														<div class="metro"><i class="metro-icon"></i>Проспект Вернандского</div>
+													</div>
+													<div class="td">
+														<div class="name">Тип</div>
+														<div class="value">закрытый</div>
+													</div>
+													<div class="td">
+														<div class="name">Мин. стоимость пая</div>
+														<div class="value">24 000 500 Р.</div>
+													</div>
+													<div class="td">
+														<div class="name">Доходность</div>
+														<div class="value">11.5%</div>
+													</div>
+												</a>
+											</div>
+											<div class="tr">
+												<a href="#">
+													<div class="td">
+														<h3>Фонд Надежный</h3>
+														<div class="metro"><i class="metro-icon"></i>Проспект Вернандского</div>
+													</div>
+													<div class="td">
+														<div class="name">Тип</div>
+														<div class="value">закрытый</div>
+													</div>
+													<div class="td">
+														<div class="name">Мин. стоимость пая</div>
+														<div class="value">24 000 500 Р.</div>
+													</div>
+													<div class="td">
+														<div class="name">Доходность</div>
+														<div class="value">11.5%</div>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row tabled-parameters">
+									<h2 class="col-sm-12">Вклады</h2>
+									<div class="col-sm-12 house-table-wrapper">
+										<div class="table">
+											<div class="tr">
+												<a href="#">
+													<div class="td">
+														<h3>Вклад "Летний"</h3>
+														<div class="metro"><i class="metro-icon"></i>Проспект Вернандского</div>
+													</div>
+													<div class="td">
+														<div class="name">Срок</div>
+														<div class="value">от 1 года</div>
+													</div>
+													<div class="td">
+														<div class="name">Мин. сумма</div>
+														<div class="value">24 000 500 Р.</div>
+													</div>
+													<div class="td">
+														<div class="name">Доходность</div>
+														<div class="value">11.5%</div>
+													</div>
+												</a>
+											</div>
+											<div class="tr">
+												<a href="#">
+													<div class="td">
+														<h3>Вклад "Летний"</h3>
+														<div class="metro"><i class="metro-icon"></i>Проспект Вернандского</div>
+													</div>
+													<div class="td">
+														<div class="name">Срок</div>
+														<div class="value">от 1 года</div>
+													</div>
+													<div class="td">
+														<div class="name">Мин. сумма</div>
+														<div class="value">24 000 500 Р.</div>
+													</div>
+													<div class="td">
+														<div class="name">Доходность</div>
+														<div class="value">11.5%</div>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3 aside">
+							<div class="banner">
+								<a href="#"><img src="img/banner.jpg" alt=""/></a>
+							</div>
+							<div id="subscribe-form" class="subscribe">
+								<form>
+									<div class="description">Подпишитесь на рассылку новостей и статей для того чтобы быть в курсе</div>
+									<input type="email" placeholder="Ваш E-mail" name="form_email_2"/>
+									<input type="submit" value="Подписаться"/>
+								</form>
+							</div>
+							<div class="aside-specials aside-invest-detail invests-list">
+								<div class="header">
+									<span class="flags flag-left"></span>
+									<h3>лучший вклад</h3>
+									<span class="flags flag-right"></span>
+								</div>
+								<div class="invest-top">
+									<div class="image">
+										<a href="#"><img src="img/images/specials-invest.jpg" alt=""></a>
+									</div>
+									<div class="content">
+										<div class="date">23.05.15</div>
+										<h3><a href="#">Оптимальный семейный вклад</a></h3>
+									</div>	
+								</div>	
+								<div class="parameters-list">
+									<div class="line">
+										<div class="name">Валюта</div>
+										<div class="value"><span class="currency-value">rub</span></div>
+									</div>
+									<div class="line">
+										<div class="name">Ставка %</div>
+										<div class="value"><span class="procent-value"> 13%</span></div>
+									</div>
+									<div class="line">
+										<div class="name">Город</div>
+										<div class="value">Москва</div>
+									</div>
+									<div class="line">
+										<div class="name">Срок размещения</div>
+										<div class="value">2 года</div>
+									</div>
+									<div class="line">
+										<div class="name">Минимальный взнос, р.</div>
+										<div class="value">600 000</div>
+									</div>
+								</div>
+								<div class="btn-wrapper">
+									<a href="#" class="favor-btn"><i class="icon"></i>В закладки</a>
+									<a href="#" class="compare-btn"><i class="icon"></i>Сравнить</a>
+								</div>
+							</div>
+							<div class="vote">
+								<div id="vote-form">
+									<form>
+										<div class="vote-header">Как оценивате экономическую ситуацию в России?</div>
+										<div class="radio-block">
+											<label>
+												<input type="radio" name="vote"/><span class="name">Хорошо!</span>
+											</label>
+											<label>
+												<input type="radio" name="vote"/><span class="name">Могло быть и лучше</span>
+											</label>
+											<label>
+												<input type="radio" name="vote"/><span class="name">Хочу знать результат опроса</span>
+											</label>
+										</div>
+										<input type="submit" value="Ответить"/>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer>	
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 footer-menu">
+							<ul>
+								<li><a href="#">О проекте</a></li>
+								<li><a href="#">Рекламные возможности</a></li>
+								<li><a href="#">Девелоперам</a></li>
+								<li><a href="#">Финансистам</a></li>
+								<li><a href="#">Инвесторам</a></li>
+								<li><a href="#">Контакты</a></li>
+								<li><a href="#">Карта сайта</a></li>
+								<li><a href="#">Партнерская программа</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-3 copyrights">
+							© 2014 Invest-finance.ru
+						</div>
+						<div class="col-sm-6 copyrights-text">
+							При использовании текстовых материалов ссылки и гиперссылки должны быть 
+							сделаны пользователем в первом абзаце текста, котором используется
+							текстовые материалы с сайта
+						</div>
+					</div>
+				</div>	
+			</footer>
+		</div>
+	</body>
+</html>
