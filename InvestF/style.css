@@ -218,7 +218,7 @@ header .currency-wrapper .currency .arrow.arrow-up{
 	font-weight: bold;
 	font-size: 25px;
 	padding: 3px 15px 1px;
-	width: 265px;
+	width: 254px;
 	color: #7f0002;
 	height: 40px;
 }
@@ -2740,7 +2740,31 @@ section .contacts-detail__contact-info h3{
 }
 .cabinet-menu__item a{
 	color:white;
-	
+}
+.cabinet-menu__item--sub{
+	position: relative;
+}
+.cabinet-menu__item--sub:before{
+	content: "";
+	display: block;
+	background: url(img/icons/cabinet-menu_sub-menu.png);
+	width: 10px;
+	height: 11px;
+	position: absolute;
+	left: 152px;
+	top: 14px;
+	cursor: pointer;
+}
+.cabinet-menu_sub-menu{
+	display: none;
+} 
+.cabinet-menu__item--sub:hover{
+	margin-bottom: 0px;
+}
+.cabinet-menu__item--sub:hover .cabinet-menu_sub-menu{
+	padding-left: 20px;
+	display: block;
+	 
 }
 /*----------cabinet-menu-end-----------*/
 
